@@ -1,0 +1,65 @@
+.manual-cite-container {
+  max-width: 480px;
+  margin: 50px auto;
+  padding: 30px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.manual-cite-container h2 {
+  margin-bottom: 20px;
+}
+
+/* SOLO inputs dentro de cita manual */
+.manual-cite-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.manual-cite-container input {
+  padding: 12px;
+  font-size: 15px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+/* SOLO botón del formulario */
+.manual-cite-container form button {
+  padding: 12px;
+  background-color: #1e3c72;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.manual-cite-container form button:hover {
+  background-color: #16305c;
+}
+
+/* Caja de cita */
+.manual-citation-box {
+  margin-top: 20px;
+  padding: 15px;
+  background-color: #fafafa;
+  border-left: 4px solid #1e3c72;
+  font-size: 14px;
+}
+
+/* Botón copiar */
+.manual-copy-btn {
+  margin-top: 10px;
+  padding: 10px;
+  background-color: #2ecc71;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.manual-copy-btn:hover {
+  background-color: #27ae60;
+}

@@ -1,6 +1,6 @@
 import { useState } from "react";
 import Nav from "../components/Nav";
-import { Navigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 const generarCitaAPA = (doc) => {
   const autores =
@@ -17,6 +17,7 @@ const generarCitaAPA = (doc) => {
 
 
 function DashboardUsuario() {
+  const navigate = useNavigate();
   const [citaVisible, setCitaVisible] = useState(null);
 
   const [tema, setTema] = useState("");

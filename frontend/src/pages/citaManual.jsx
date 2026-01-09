@@ -29,8 +29,7 @@ function CitaManual() {
   return (
     <>
       <Nav />
-
-      <div className="form-container">
+        <div className="manual-cite-container">
         <h2>Generador de Cita APA Manual</h2>
 
         <form onSubmit={generarCita}>
@@ -66,14 +65,15 @@ function CitaManual() {
         </form>
 
         {cita && (
-          <div className="citation-box">
+          <div className="manual-citation-box">
             <p>{cita}</p>
-            <button className="copy-btn" onClick={copiarCita}>
+            <button className="manual-copy-btn" onClick={copiarCita}>
               Copiar cita
             </button>
           </div>
         )}
       </div>
+
     </>
   );
 }

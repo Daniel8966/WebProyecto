@@ -6,6 +6,7 @@ import "./styles/form.css";
 import "./styles/nav.css";
 import "./styles/admin.css";
 import "./styles/dashboard.css";
+import "./styles/citaManual.css";
 
 
 
