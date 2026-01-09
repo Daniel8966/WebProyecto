@@ -1,5 +1,6 @@
 import { useState } from "react";
 import Nav from "../components/Nav";
+import { Navigate } from "react-router-dom";
 
 const generarCitaAPA = (doc) => {
   const autores =
@@ -58,6 +59,12 @@ function DashboardUsuario() {
             onChange={(e) => setTema(e.target.value)}
           />
           <button onClick={buscarDocumentos}>Buscar</button>
+          <button
+          className="manual-cite-btn"
+          onClick={() => navigate("/cita-manual")}
+        >
+          Cita manual
+</button>
         </div>
 
         {loading && <p>Buscando documentos...</p>}

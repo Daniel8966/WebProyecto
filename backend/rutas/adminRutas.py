@@ -53,3 +53,23 @@ def iniciar_sesion_admin(session: SessionDep, admin: UsuarioLogin):
         "mensaje": "Login de administrador exitoso",
         "admin": comprobar_admin
     }
+
+@router.delete("/{usuario_id}")
+def eliminar_usuario(usuario_id: int, session: SessionDep):
+    usuario = session.exec(
+        select(Usuario).where(Usuario.id == usuario_id)
+    ).first()
+
+    if not usuario:
+        raise HTTPException(
+            status_code=404,
+            detail="Usuario no encontrado"
+        )
+
+    session.delete(usuario)
+    session.commit()
+
+    return {
+        "mensaje": "Usuario eliminado correctamente",
+        "usuario_id": usuario_id
+    }

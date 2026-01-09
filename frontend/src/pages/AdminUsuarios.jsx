@@ -2,6 +2,18 @@ import { useEffect, useState } from "react";
 import api from "../api/api";
 import Nav from "../components/Nav";
 
+const eliminarUsuario = async (id) => {
+
+  try {
+    await api.delete(`/admin/${id}`);
+
+    //  Refrescar página completa
+    window.location.reload();
+
+  } catch (error) {
+    alert("Error al eliminar el usuario");
+  }
+};
 function AdminUsuarios() {
   const [usuarios, setUsuarios] = useState([]);
   const [error, setError] = useState("");
@@ -35,6 +47,7 @@ function AdminUsuarios() {
                 <tr>
                   <th>ID</th>
                   <th>Nombre</th>
+                  <th>Opciones</th>
                 </tr>
               </thead>
               <tbody>
@@ -42,6 +55,15 @@ function AdminUsuarios() {
                   <tr key={u.id}>
                     <td>{u.id}</td>
                     <td>{u.nombre}</td>
+                    <td>
+                      <button
+                    onClick={() => eliminarUsuario(u.id)}
+                    >
+                    Eliminar
+                    </button>
+
+                    </td>
+                  
                   </tr>
                 ))}
               </tbody>
