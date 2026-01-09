@@ -18,6 +18,6 @@ class UsuarioPublico(SQLModel):
     nombre: str
 
 class usuarioAdmin(SQLModel):
-    id: int
     nombre: str
+    password: str 
 
