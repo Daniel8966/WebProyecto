@@ -16,3 +16,8 @@ class UsuarioCreate(SQLModel):
 class UsuarioPublico(SQLModel):
     id: int
     nombre: str
+
+class usuarioAdmin(SQLModel):
+    id: int
+    nombre: str
+
