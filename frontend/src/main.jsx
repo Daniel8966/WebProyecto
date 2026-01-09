@@ -5,6 +5,8 @@ import "./styles/landing.css";
 import "./styles/form.css";
 import "./styles/nav.css";
 import "./styles/admin.css";
+import "./styles/dashboard.css";
+
 
 
 ReactDOM.createRoot(document.getElementById("root")).render(

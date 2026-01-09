@@ -4,6 +4,8 @@ import LoginUsuario from "./pages/loginUsuario";
 import RegistroUsuario from "./pages/RegistrarUsuario";
 import LoginAdmin from "./pages/LoginAdmin";
 import AdminUsuarios from "./pages/AdminUsuarios";
+import DashboardUsuario from "./pages/paginaUsuario";
+
 
 
 function App() {
@@ -15,6 +17,7 @@ function App() {
         <Route path="/admin/login" element={<LoginAdmin />} />
         <Route path="/admin/usuarios" element={<AdminUsuarios />} />
         <Route path="/registro" element={<RegistroUsuario />} />
+        <Route path="/dashboard" element={<DashboardUsuario />} />
 
 
       </Routes>

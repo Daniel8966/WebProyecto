@@ -3,6 +3,7 @@ import api from "../api/api";
 import Nav from "../components/Nav";
 import { useNavigate } from "react-router-dom";
 
+
 function LoginUsuario() {
   const [nombre, setNombre] = useState("");
   const [password, setPassword] = useState("");
@@ -14,6 +15,10 @@ function LoginUsuario() {
     try {
       const res = await api.post("/usuarios/login", { nombre, password });
       setMensaje(res.data.mensaje);
+      if (res.data.mensaje == "Login exitoso"){
+          navigate("/dashboard");
+
+      }
     } catch (err) {
       setMensaje(err.response?.data?.detail || "Error al iniciar sesión");
     }

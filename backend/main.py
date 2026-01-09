@@ -2,7 +2,7 @@ from fastapi import FastAPI
 from database.SessionDep import *
 from  fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-from rutas import usuarioRutas, adminRutas
+from rutas import usuarioRutas, adminRutas, recomendacionesRutas
 from models.models import Usuario
 
 app = FastAPI()
@@ -25,3 +25,4 @@ def on_startup():
 
 app.include_router(usuarioRutas.router)
 app.include_router(adminRutas.router)
+app.include_router(recomendacionesRutas.router)

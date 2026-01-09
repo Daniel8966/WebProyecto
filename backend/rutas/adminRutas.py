@@ -38,7 +38,7 @@ def iniciar_sesion_admin(session: SessionDep, admin: UsuarioLogin):
     comprobar_admin = session.exec(
         select(Admin).where(
             Admin.nombre == admin.nombre,
-            Admin.password == admin.password
+            Admin.password == admin.password    
         )
     ).first()
 
