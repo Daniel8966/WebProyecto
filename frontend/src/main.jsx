@@ -4,6 +4,8 @@ import App from "./App";
 import "./styles/landing.css";
 import "./styles/form.css";
 import "./styles/nav.css";
+import "./styles/admin.css";
+
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>

@@ -1,0 +1,21 @@
+.admin-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.admin-table th,
+.admin-table td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: left;
+}
+
+.admin-table th {
+  background-color: #1e3c72;
+  color: white;
+}
+
+.admin-table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
