@@ -1,21 +1,40 @@
-.admin-table {
-  width: 100%;
-  border-collapse: collapse;
-  margin-top: 20px;
+.admin-container {
+  padding: 30px;
 }
 
-.admin-table th,
-.admin-table td {
-  border: 1px solid #ddd;
-  padding: 12px;
-  text-align: left;
-}
-
-.admin-table th {
-  background-color: #1e3c72;
+.btn-prueba {
+  padding: 12px 18px;
+  font-size: 16px;
+  background-color: #1e88e5;
   color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-bottom: 20px;
 }
 
-.admin-table tr:nth-child(even) {
-  background-color: #f2f2f2;
+.btn-prueba:hover {
+  background-color: #1565c0;
+}
+
+.btn-prueba:disabled {
+  background-color: #90caf9;
+  cursor: not-allowed;
+}
+
+.resultado-prueba {
+  background: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 800px;
+}
+
+.resultado-prueba blockquote {
+  background: #eee;
+  padding: 10px;
+  border-left: 4px solid #1e88e5;
+}
+
+.error {
+  color: red;
 }

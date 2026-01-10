@@ -7,7 +7,7 @@ import AdminUsuarios from "./pages/AdminUsuarios";
 import DashboardUsuario from "./pages/paginaUsuario";
 import CitaManual from "./pages/citaManual";
 import AnalisisDocumento from "./pages/AnalisisDocumento";
-
+import AdminDashboard from "./pages/adminDashboard";
 function App() {
   return (
     <BrowserRouter>
@@ -20,6 +20,7 @@ function App() {
         <Route path="/dashboard" element={<DashboardUsuario />} />
         <Route path="/cita-manual" element={<CitaManual />} />
         <Route path="/analisis-documento" element={<AnalisisDocumento />} />
+        <Route path="/admin-dash" element={<AdminDashboard />} />
 
 
       </Routes>

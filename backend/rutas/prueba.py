@@ -17,19 +17,19 @@ def calcular_similitud(texto1, texto2):
 def prueba_general(session: SessionDep):
     resultado = {}
 
-    # 1️⃣ Probar conexión a BD
+    # 1 Probar conexión a BD
     usuarios = session.exec(select(Usuario)).all()
     resultado["bd_conexion"] = "OK"
     resultado["total_usuarios"] = len(usuarios)
 
-    # 2️⃣ Login simulado
+    # 2 Login simulado
     if usuarios:
         resultado["login_prueba"] = "OK"
         resultado["usuario_ejemplo"] = usuarios[0].nombre
     else:
         resultado["login_prueba"] = "SIN USUARIOS"
 
-    # 3️⃣ Probar OpenAlex
+    # 3 Probar OpenAlex
     texto_prueba = "machine learning in education"
 
     response = requests.get(
@@ -54,10 +54,10 @@ def prueba_general(session: SessionDep):
     else:
         abstract = titulo
 
-    # 4️⃣ Similitud
+    #  Similitud
     similitud = calcular_similitud(texto_prueba, abstract)
 
-    # 5️⃣ Cita APA
+    # 5 Cita APA
     autores = [
         a["author"]["display_name"]
         for a in work.get("authorships", [])
@@ -66,7 +66,7 @@ def prueba_general(session: SessionDep):
 
     cita = f"{', '.join(autores)} ({work.get('publication_year')}). {titulo}."
 
-    # 6️⃣ Resultado final
+    # 6 Resultado final
     resultado["openalex"] = "OK"
     resultado["titulo"] = titulo
     resultado["similitud"] = round(similitud, 2)

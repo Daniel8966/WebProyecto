@@ -8,8 +8,7 @@ import "./styles/admin.css";
 import "./styles/dashboard.css";
 import "./styles/citaManual.css";
 import "./styles/analisisDocumento.css";
-
-
+import "./styles/admin.css";
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <App />
