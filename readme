@@ -23,12 +23,12 @@ Cliente HTTP: Axios
 
 Desde la raíz del proyecto:
 
-``` py -m venv venv ``` 
+ py -m venv venv  
 
 
 Activar el entorno virtual:
 
-``` .\venv\Scripts\activate ``` 
+.\venv\Scripts\activate  
 
 
 --------------------------------
@@ -36,7 +36,7 @@ Activar el entorno virtual:
 
 Asegúrate de tener el archivo requirements.txt dentro de la carpeta backend (o raíz según tu estructura):
 
-```pip install -r requirements.txt```
+pip install -r requirements.txt
 
 --------------------------------
 
@@ -60,7 +60,7 @@ Configuración del Frontend (React)
 cd frontend
 
 5. Crear proyecto React con Vite
-```npm create vite@latest frontend --template react```
+npm create vite@latest frontend --template react
 
 
 Seleccionar:
@@ -70,15 +70,15 @@ Framework: React
 Lenguaje: JavaScript
 
 6. Instalar dependencias del frontend
-```npm install```
+npm install
 
 
 Instalar Axios para la comunicación con la API:
 
-```npm install axios```
+npm install axios
 
 7. Ejecutar el frontend
-```npm run dev```
+npm run dev
 
 
 El frontend estará disponible normalmente en:
