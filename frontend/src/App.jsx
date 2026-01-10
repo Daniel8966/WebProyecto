@@ -6,7 +6,7 @@ import LoginAdmin from "./pages/LoginAdmin";
 import AdminUsuarios from "./pages/AdminUsuarios";
 import DashboardUsuario from "./pages/paginaUsuario";
 import CitaManual from "./pages/citaManual";
-
+import AnalisisDocumento from "./pages/AnalisisDocumento";
 
 function App() {
   return (
@@ -19,6 +19,8 @@ function App() {
         <Route path="/registro" element={<RegistroUsuario />} />
         <Route path="/dashboard" element={<DashboardUsuario />} />
         <Route path="/cita-manual" element={<CitaManual />} />
+        <Route path="/analisis-documento" element={<AnalisisDocumento />} />
+
 
       </Routes>
     </BrowserRouter>

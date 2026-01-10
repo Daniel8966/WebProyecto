@@ -62,10 +62,12 @@ function DashboardUsuario() {
           <button onClick={buscarDocumentos}>Buscar</button>
           <button
           className="manual-cite-btn"
-          onClick={() => navigate("/cita-manual")}
-        >
+          onClick={() => navigate("/cita-manual")}>
           Cita manual
-</button>
+        </button>
+        <button onClick={() => navigate("/analisis-documento")}>
+          Analizar documento
+        </button>
         </div>
 
         {loading && <p>Buscando documentos...</p>}

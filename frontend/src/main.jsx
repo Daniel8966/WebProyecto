@@ -7,7 +7,7 @@ import "./styles/nav.css";
 import "./styles/admin.css";
 import "./styles/dashboard.css";
 import "./styles/citaManual.css";
-
+import "./styles/analisisDocumento.css";
 
 
 ReactDOM.createRoot(document.getElementById("root")).render(
