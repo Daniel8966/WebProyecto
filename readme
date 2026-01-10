@@ -1,0 +1,86 @@
+# Sistema de Recuperación Académica para la Realización de Tesis e Investigaciones
+
+Este proyecto es una plataforma web que apoya a estudiantes e investigadores en la selección de temas de tesis, búsqueda de documentos académicos, generación de citas en formato APA y análisis de similitud de textos, utilizando tecnologías modernas de desarrollo web y fuentes académicas confiables.
+
+# Tecnologías utilizadas
+
+## Backend: Python, FastAPI, SQLModel
+
+## Frontend: React (Vite)
+
+## Base de datos: SQLModel (SQLite u otro motor compatible)
+
+Consumo de datos académicos: OpenAlex
+
+Cliente HTTP: Axios
+
+
+--------------------------------
+
+
+# Instalación y ejecución del proyecto
+1. Crear y activar entorno virtual (Backend)
+
+Desde la raíz del proyecto:
+
+``` py -m venv venv ``` 
+
+
+Activar el entorno virtual:
+
+``` .\venv\Scripts\activate ``` 
+
+
+--------------------------------
+2. Instalar dependencias del backend
+
+Asegúrate de tener el archivo requirements.txt dentro de la carpeta backend (o raíz según tu estructura):
+
+```pip install -r requirements.txt```
+
+--------------------------------
+
+3. Ejecutar el servidor FastAPI
+uvicorn main:app --reload
+
+
+El backend estará disponible en:
+
+http://127.0.0.1:8000
+
+
+Y la documentación automática en:
+
+http://127.0.0.1:8000/docs
+
+--------------------------------
+
+Configuración del Frontend (React)
+4. Acceder a la carpeta frontend
+cd frontend
+
+5. Crear proyecto React con Vite
+```npm create vite@latest frontend --template react```
+
+
+Seleccionar:
+
+Framework: React
+
+Lenguaje: JavaScript
+
+6. Instalar dependencias del frontend
+```npm install```
+
+
+Instalar Axios para la comunicación con la API:
+
+```npm install axios```
+
+7. Ejecutar el frontend
+```npm run dev```
+
+
+El frontend estará disponible normalmente en:
+
+http://localhost:5173
